@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Carmelo</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+
+<title>ScriptBreaker.com - JCarosellite with pagination</title>
+<style type="text/css">
+<!--
+body {margin:0; padding:0; background:#fff;}
+#slidebox{position:relative; border:1px solid #ccc; margin:40px auto;overflow:hidden;}
+#slidebox, #slidebox ul {width:600px;height:300px;}
+#slidebox, #slidebox ul li{width:600px;height:300px;}
+#slidebox ul li{position:relative; left:0; background:#eee; float:left;list-style: none; padding:15px 28px;  font-family:Verdana, Geneva, sans-serif; font-size:13px;}
+#slidebox .next, #slidebox .previous{position:absolute; z-index:2; display:block; width:21px; height:21px;top:139px;}
+#slidebox .next{right:0; margin-right:10px; background:url(slidebox_next.png) no-repeat left top;}
+#slidebox .next:hover{background:url(slidebox_next_hover.png) no-repeat left top;}
+#slidebox .previous{margin-left:10px; background:url(slidebox_previous.png) no-repeat left top;}
+#slidebox .previous:hover{background:url(slidebox_previous_hover.png) no-repeat left top;}
+#slidebox .thumbs{position:absolute; z-index:2; bottom:10px; right:10px;}
+#slidebox .thumbs a{display:block; margin-left:5px; float:left; font-family:Verdana, Geneva, sans-serif; font-size:9px; text-decoration:none; padding:2px 4px; background:url(slidebox_thumb.png); color:#fff;}
+#slidebox .thumbs a:hover{background:#fff; color:#000;}
+#slidebox .thumbs .thumbActive{background:#fff; color:#000; display:block; margin-left:5px; float:left; font-family:Verdana, Geneva, sans-serif; font-size:9px; text-decoration:none; padding:2px 4px;}
+-->
+</style>
+
+<script src="jquery-1.5.2.min.js" type="text/javascript"></script>
+<script src="jcarousellite_1.0.1c5.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+$(function() {
+	$("#slidebox").jCarouselLite({
+		vertical: false,
+		hoverPause:true,
+		btnPrev: ".previous",
+		btnNext: ".next",
+		visible: 1,
+		start: 0,
+		scroll: 1,
+		circular: true,
+		auto:4000,
+		speed:500,				
+		btnGo:
+		    [".1", ".2",
+		    ".3", ".4", ".5"],
+		
+		afterEnd: function(a, to, btnGo) {
+				if(btnGo.length <= to){
+					to = 0;
+				}
+				$(".thumbActive").removeClass("thumbActive");
+				$(btnGo[to]).addClass("thumbActive");
+		    }
+	});
+});
+</script>
+
+
+
+
+
+
+</head>
+<body>
+
+
+
+
+<body>
+<div id="wrapper">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="index.html">Inicio</a></li>
+			<li><a href="html.html">HTML</a></li>
+			<li><a href="js.html">JAVASCRIPT</a></li>
+			<li><a href="php.html">PHP</a></li>
+                        <li><a href="asp.html">ASP</a></li>
+                        <li><a href="asp2.html">ASP.NET</a></li>
+                        <li><a href="jsp.html">JSP</a></li>
+		</ul>
+	</div>
+	<!-- end #menu -->
+
+	<div id="header">
+
+
+
+<div id="slidebox">
+<div class="next"></div>
+<div class="previous"></div>
+<div class="thumbs">
+<a href="#" onClick="" class="1 thumbActive">1</a> 
+<a href="#" onClick="" class="2">2</a> 
+<a href="#" onClick="" class="3 ">3</a> 
+<a href="#" onClick="" class="4">4</a> 
+<a href="#" onClick="" class="5">5</a>
+</div>
+	<ul>
+    	<li> <img src="Imagenes/imagen1.jpg"> </li>
+    	<li> <img src="Imagenes/imagen2.jpg"> </li>
+    	<li> <img src="Imagenes/imagen3.jpg"> </li>
+    	<li> <img src="Imagenes/imagen4.jpg"> </li>
+        <li> <img src="Imagenes/imagen5.jpg"> </li>
+	</ul>
+</div>
+
+
+		<div id="logo">
+	<h1><a href="#">Yosemite   </a></h1>			
+		</div>
+	</div>
+	<!-- end #header -->
+	<div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+				<h2 class="title"><a href="#">Lenguaje ASP</a></h2>
+				<p class="meta"><span class="date">Junio 06, 2014</span><span class="posted">Publicado por <a href="carmelo.html">Carmelo</a></span></p>
+				<div style="clear: both;">&nbsp;</div>
+				<div class="entry">					
+					<p>
+Es una tecnología del lado de servidor desarrollada por Microsoft para el desarrollo de sitio web dinámicos. ASP significa en inglés (Active Server Pages), fue liberado por Microsoft en 1996. Las páginas web desarrolladas bajo este lenguaje es necesario tener instalado Internet Information Server (IIS).
+ASP no necesita ser compilado para ejecutarse. Existen varios lenguajes que se pueden utilizar para crear páginas ASP. El más utilizado es VBScript, nativo de Microsoft. ASP se puede hacer también en Perl and Jscript (no JavaScript). El código ASP puede ser insertado junto con el código HTML. Los archivos cuentan con la extensión (asp).
+</p>
+					<p class="links"><a href="#">Read More</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Comments</a></p>
+				</div>
+			</div>
+			<div class="post">
+				<h2 class="title"><a href="#">Sintaxis</a></h2>
+				<p class="meta"><span class="date">September 10, 2009</span><span class="posted">Publicado por <a href="carmelo.html">Carmelo</a></span></p>
+				<div style="clear: both;">&nbsp;</div>
+				<div class="entry">
+					<p><li> <img src="Imagenes/asp.jpg"> </li></p>
+					<p class="links"><a href="#">Read More</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Comments</a></p>
+				</div>
+			</div>
+			<div class="post">
+				<h2 class="title"><a href="#">Ventajas y Desventajas</a></h2>
+				<p class="meta"><span class="date">September 10, 2009</span><span class="posted">Publicado por <a href="carmelo.html">Carmelo</a></span></p>
+				<div style="clear: both;">&nbsp;</div>
+				<div class="entry">
+					<p>
+</br>Ventajas:
+</br>
+</br>	Usa Visual Basic Script, siendo fácil para los usuarios.
+</br>	Comunicación óptima con SQL Server.
+</br>	Soporta el lenguaje JScript (Javascript de Microsoft).
+
+</br></br>Desventajas:
+</br>
+</br>	Código desorganizado.
+</br>	Se necesita escribir mucho código para realizar funciones sencillas.
+</br>	Tecnología propietaria.
+</br>	Hospedaje de sitios web costosos.
+
+
+</p>
+					<p class="links"><a href="#">Read More</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Comments</a></p>
+				</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+		</div>
+		<!-- end #content -->
+		<div id="sidebar">
+			<ul>
+				<li>
+					<div id="search" >
+					<form method="get" action="#">
+						<div>
+							<input type="text" name="s" id="search-text" value="" />
+							<input type="submit" id="search-submit" value="GO" />
+						</div>
+					</form>
+					</div>
+					<div style="clear: both;">&nbsp;</div>
+				</li>
+				
+				<li>
+					<h2>Gestores de Contenido</h2>
+					<ul>
+						<li><a href="#">Joomla</a></li>
+						<li><a href="#">Dreamweaver</li>
+						<li><a href="#">Visual Studio .NET</a></li>
+						<li><a href="#">Adobe Muse</a></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Lenguajes de Programacion</h2>
+					<ul>
+						<li><a href="#">JAVA</a></li>
+						<li><a href="#">C#</a></li>
+						<li><a href="#">Visual Basic</a></li>
+						<li><a href="#">Phyton</a></li>
+						<li><a href="#">C++</a></li>
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p><a href="http://www.norfipc.com/">Plantillas Gratis</a>.</p>
+	</div>
+	<!-- end #footer -->
+</body>
+</html>
